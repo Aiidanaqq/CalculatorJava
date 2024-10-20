@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.javafxcalculator.HelloController" style="-fx-background-color: #1c1c1c;">
+    <GridPane alignment="center" hgap="5" vgap="5" style="-fx-padding: 20;">
+
+        <TextField fx:id="display" editable="false" GridPane.columnSpan="4"
+                   style="-fx-font-size: 20px; -fx-text-fill: #ffffff; -fx-background-color: #424242; -fx-background-radius: 10; -fx-padding: 10; -fx-alignment: center-right;"/>
+
+        <!-- Row 1 -->
+        <Button text="7" onAction="#handleNumber" GridPane.rowIndex="1" GridPane.columnIndex="0" style="-fx-font-size: 16px; -fx-background-color: #333333; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 50; -fx-pref-height: 50;"/>
+        <Button text="8" onAction="#handleNumber" GridPane.rowIndex="1" GridPane.columnIndex="1" style="-fx-font-size: 16px; -fx-background-color: #333333; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 50; -fx-pref-height: 50;"/>
+        <Button text="9" onAction="#handleNumber" GridPane.rowIndex="1" GridPane.columnIndex="2" style="-fx-font-size: 16px; -fx-background-color: #333333; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 50; -fx-pref-height: 50;"/>
+        <Button text="/" onAction="#handleOperator" GridPane.rowIndex="1" GridPane.columnIndex="3" style="-fx-font-size: 16px; -fx-background-color: #ff5722; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 50; -fx-pref-height: 50;"/>
+
+        <!-- Row 2 -->
+        <Button text="4" onAction="#handleNumber" GridPane.rowIndex="2" GridPane.columnIndex="0" style="-fx-font-size: 16px; -fx-background-color: #333333; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 50; -fx-pref-height: 50;"/>
+        <Button text="5" onAction="#handleNumber" GridPane.rowIndex="2" GridPane.columnIndex="1" style="-fx-font-size: 16px; -fx-background-color: #333333; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 50; -fx-pref-height: 50;"/>
+        <Button text="6" onAction="#handleNumber" GridPane.rowIndex="2" GridPane.columnIndex="2" style="-fx-font-size: 16px; -fx-background-color: #333333; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 50; -fx-pref-height: 50;"/>
+        <Button text="*" onAction="#handleOperator" GridPane.rowIndex="2" GridPane.columnIndex="3" style="-fx-font-size: 16px; -fx-background-color: #ff5722; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 50; -fx-pref-height: 50;"/>
+
+        <!-- Row 3 -->
+        <Button text="1" onAction="#handleNumber" GridPane.rowIndex="3" GridPane.columnIndex="0" style="-fx-font-size: 16px; -fx-background-color: #333333; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 50; -fx-pref-height: 50;"/>
+        <Button text="2" onAction="#handleNumber" GridPane.rowIndex="3" GridPane.columnIndex="1" style="-fx-font-size: 16px; -fx-background-color: #333333; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 50; -fx-pref-height: 50;"/>
+        <Button text="3" onAction="#handleNumber" GridPane.rowIndex="3" GridPane.columnIndex="2" style="-fx-font-size: 16px; -fx-background-color: #333333; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 50; -fx-pref-height: 50;"/>
+        <Button text="-" onAction="#handleOperator" GridPane.rowIndex="3" GridPane.columnIndex="3" style="-fx-font-size: 16px; -fx-background-color: #ff5722; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 50; -fx-pref-height: 50;"/>
+<Button text="0" onAction="#handleNumber" GridPane.rowIndex="4" GridPane.columnIndex="0" style="-fx-font-size: 16px; -fx-background-color: #333333; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 50; -fx-pref-height: 50;"/> <!-- Размеры как у других цифр -->
+<Button text="=" onAction="#handleEquals" GridPane.rowIndex="4" GridPane.columnIndex="1" GridPane.columnSpan="2" style="-fx-font-size: 16px; -fx-background-color: #ff5722; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 110; -fx-pref-height: 50;"/> <!-- Увеличенный размер -->
+<Button text="+" onAction="#handleOperator" GridPane.rowIndex="4" GridPane.columnIndex="3" style="-fx-font-size: 16px; -fx-background-color: #ff5722; -fx-text-fill: white; -fx-background-radius: 10; -fx-pref-width: 50; -fx-pref-height: 50;"/>
+
+        <!-- Row 5 -->
+<Button text="Clear" onAction="#handleClear" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="4" style="-fx-font-size: 16px; -fx-background-color: #bdbdbd; -fx-text-fill: black; -fx-background-radius: 10; -fx-pref-height: 50;"/>
+        </GridPane>
+        </StackPane>
